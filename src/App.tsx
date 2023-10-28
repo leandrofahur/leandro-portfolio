@@ -1,9 +1,8 @@
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
+import Astronault from "./assets/images/astronauts/astronaut-01.svg";
 import "./App.css";
 
 function App() {
-  return <div>Portfolio</div>;
+  return <img src={Astronault} />;
 }
 
 export default App;
