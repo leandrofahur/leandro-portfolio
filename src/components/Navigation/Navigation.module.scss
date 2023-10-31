@@ -11,6 +11,7 @@
   &-logo {
     height: 50px;
     width: 50px;
+    cursor: pointer;
   }
 
   &-menu-list {
@@ -23,12 +24,13 @@
       display: flex;
       width: 100%;
       padding: 1rem;
+      cursor: pointer;
 
       &-link {
         position: relative;
+        display: flex;
         color: white;
         text-decoration: none;
-        cursor: pointer;
         transition: color 0.2s ease-in-out;
 
         &::after {
@@ -49,16 +51,10 @@
 
           &::after {
             transform: scaleX(1);
+            bottom: -7px;
             transform-origin: bottom left;
           }
         }
-      }
-
-      svg {
-        height: 1.5rem;
-        width: 1.5rem;
-        margin-right: 0.5rem;
-        color: $primary;
       }
     }
   }

@@ -16,39 +16,40 @@ const components = [
   {
     label: "Home",
     slug: "/home",
-    icon: <Rocket size={24} />,
+    icon: <Rocket size={24} className={styles.icon} />,
   },
   {
     label: "About",
     slug: "/about",
-    icon: <Alien size={24} />,
+    icon: <Alien size={24} className={styles.icon} />,
   },
   {
     label: "Contact",
     slug: "/contact",
-    icon: <Planet size={24} />,
+    icon: <Planet size={24} className={styles.icon} />,
   },
 ];
 
 export const Navigation = () => {
   return (
     <NavigationMenu className={styles["nav"]}>
-      <img
-        src={Astronaut}
-        alt="astonaut home menu link"
-        className={styles["nav-logo"]}
-      />
-
+      <NavigationMenuLink href="#">
+        <img
+          src={Astronaut}
+          alt="astonaut home menu link"
+          className={styles["nav-logo"]}
+        />
+      </NavigationMenuLink>
       <NavigationMenuList className={styles["nav-menu-list"]}>
         {components.map((component) => {
           const { label, slug, icon } = component;
           return (
             <NavigationMenuItem className={styles["nav-menu-list-item"]}>
-              {icon}
               <NavigationMenuLink
                 href={slug}
                 className={styles["nav-menu-list-item-link"]}
               >
+                {icon}
                 {label}
               </NavigationMenuLink>
             </NavigationMenuItem>
