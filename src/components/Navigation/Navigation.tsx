@@ -16,17 +16,17 @@ const components = [
   {
     label: "Home",
     slug: "/home",
-    icon: <Rocket size={24} className={styles.icon} />,
+    icon: <Rocket size={24} className={styles["icon"]} />,
   },
   {
     label: "About",
     slug: "/about",
-    icon: <Alien size={24} className={styles.icon} />,
+    icon: <Alien size={24} className={styles["icon"]} />,
   },
   {
     label: "Contact",
     slug: "/contact",
-    icon: <Planet size={24} className={styles.icon} />,
+    icon: <Planet size={24} className={styles["icon"]} />,
   },
 ];
 

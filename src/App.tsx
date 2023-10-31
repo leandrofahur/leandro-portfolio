@@ -6,7 +6,6 @@ function App() {
   return (
     <div>
       <Navigation />
-      {/* <img src={Astronault} /> */}
     </div>
   );
 }
