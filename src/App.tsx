@@ -1,6 +1,6 @@
 // images:
 import { Navigation } from "./components/Navigation/Navigation";
-// import Astronault from "./assets/images/astronauts/astronaut-01.svg";
+import World from "./assets/images/world.svg";
 
 function App() {
   return (

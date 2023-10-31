@@ -2,6 +2,7 @@
 // eslint-disable-next-line storybook/story-exports
 import { Meta, StoryObj } from "@storybook/react";
 import { Navigation } from "./Navigation";
+import "../../index.scss";
 
 const meta = {
   component: Navigation,
